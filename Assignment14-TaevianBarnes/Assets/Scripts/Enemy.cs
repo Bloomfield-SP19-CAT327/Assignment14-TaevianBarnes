@@ -9,14 +9,14 @@ public class Enemy : MonoBehaviour
        static private List<GameObject> patrolPoints = null;
 
        #region Enemy Options
-       public float walkingSpeed = 2.5f;
+       public float walkingSpeed = 3.0f;
        public float chasingSpeed = 4.0f;
        public float attackingSpeed = 1.5f;
-       public float attackingDistance = 0.8f;
+       public float attackingDistance = 1.0f;
        #endregion
 
        private GameObject patrollingInterestPoint;
-       private GameObject playerOfInterest;
+       public GameObject playerOfInterest;
 
        // Start is called before the first frame update
        #region Standard MonoBehaviour Methods
